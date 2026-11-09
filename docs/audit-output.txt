@@ -1,0 +1,21 @@
+Password Strength Audit  (local only -- no network, no logins)
+================================================================
+[FAIL] demo-weak-common: 8 chars, 37.6 bits entropy, Moderate  -- COMMON PASSWORD
+        - Appears in the common-passwords list -- change it immediately.
+        - Shorter than the recommended 12 characters.
+        - Letters only -- add digits and symbols.
+        - Uses a well-known default / placeholder word.
+[FAIL] demo-short: 6 chars, 31.0 bits entropy, Very weak  -- COMMON PASSWORD
+        - Appears in the common-passwords list -- change it immediately.
+        - Shorter than 8 characters -- below every minimum standard.
+[FAIL] demo-digits-only: 8 chars, 26.6 bits entropy, Very weak  -- COMMON PASSWORD
+        - Appears in the common-passwords list -- change it immediately.
+        - Shorter than the recommended 12 characters.
+        - Digits only -- trivially guessable.
+        - Contains an obvious keyboard / numeric sequence.
+[PASS] demo-decent: 21 chars, 123.0 bits entropy, Very strong
+[PASS] demo-strong: 24 chars, 157.3 bits entropy, Very strong
+----------------------------------------------------------------
+Audited: 5  Passed: 2  Failed: 3
+Remediation: use a password manager, unique 16+ character
+passphrases per account, and enable MFA everywhere it is offered.

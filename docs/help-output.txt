@@ -1,0 +1,14 @@
+usage: audit.py [-h] (--passwords-file PASSWORDS_FILE | --password PASSWORD)
+                [--label LABEL] [--common-passwords COMMON_PASSWORDS]
+
+Local-only password strength auditor. No network, no logins.
+
+options:
+  -h, --help            show this help message and exit
+  --passwords-file PASSWORDS_FILE
+                        File of passwords you own, one per line.
+  --password PASSWORD   A single password to check (demo / quick check).
+  --label LABEL         Label for a --password check.
+  --common-passwords COMMON_PASSWORDS
+                        Optional local common-passwords list (default: bundled
+                        sample).
